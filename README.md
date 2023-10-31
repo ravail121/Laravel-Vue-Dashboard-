@@ -5,8 +5,6 @@ composer install
 
 cp .env.example .env
 
-php artisan key:generate
-
 php artisan migrate --seed
 
 php artisan passport:install
@@ -16,5 +14,11 @@ php artisan storage:link
 npm install
 
 npm run dev
+
+php artisan key:generate
+
+php artisan optimize
+
 php artisan serve
+
 This command will start a local development server, and you can access your project in a web browser at http://localhost:8000.
